@@ -2,8 +2,8 @@
 
 var http       = require('http')
   , AlexaSkill = require('./AlexaSkill')
-  , APP_ID     = 'amzn1.ask.skill.4a2848f4-bbbd-4d2b-b395-19eb5daaf382'
-  , MTA_KEY    = '89798953-35e8-4e63-b4e9-59303fa2859b';
+  , APP_ID     = 'AMAZON_KEY'
+  , MTA_KEY    = 'ACTUAL-MTA-KEY';
 
 var url = function(stopId){
   return 'http://bustime.mta.info/api/siri/stop-monitoring.json?key=' + MTA_KEY + '&OperatorRef=MTA&MaximumStopVisits=1&MonitoringRef=' + stopId;
